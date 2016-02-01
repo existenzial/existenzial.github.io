@@ -65,13 +65,33 @@
     <script>
         window.jQuery || document.write('<script src="/assets/js/lib/jquery-2.2.0.min.js">\x3C/script>')</script>
     <script>
-        // Slide Blog up/down on click
-        $( "#blog" ).click(function() {
-            $( "#blog" ).slideToggle( "slow", function() {
+        $(document).ready(function(){
+            
+            $("#blog").hover(
+                function(){
+                    $(this).stop().animate({"opacity": "0.5"}, "fast");
+                },
+                function(){
+                    $(this).stop().animate({"opacity": "1"}, "fast");
+                }
+            )
+            // Slide Blog up/down on click
+            $( "#blog" ).click(function() {
+                $( "#blog" ).slideToggle( "slow", function() {
+                    (function() {
+                        
+                        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                        s.src = 'http://output53.rssinclude.com/output?type=asyncjs&id=1055824&hash=1b4217d35c260c2d7440e8aa8d570742';
+                        document.getElementsByTagName('head')[0].appendChild(s);
+                    })();
+                });
             });
         });
-    </script> 
-    <!-- Google Analytics -->
+    </script>
+    <div id="rssincl-box-container-1055824"></div>
+    <!-- Parallax -->
+    <script src="/assets/js/lib/parallax.min.js"></script>
+    <!-- Start of Google Analytics -->
     <!-- jazzlyles.com Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -92,7 +112,7 @@
         ga('create', 'UA-73158615-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <!-- End Google Analytics -->
+    <!-- End of Google Analytics -->
 </body>
 
 </html>

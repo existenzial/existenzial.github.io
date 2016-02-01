@@ -1,2 +1,0 @@
-#Jazz Lyles
-Personal Brand
