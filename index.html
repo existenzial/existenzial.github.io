@@ -1,49 +1,98 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>Jazz Lyles</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Jazz Lyles</h1>
-						<p>Game Engineer &nbsp;&bull;&nbsp; Autonomous Thinker &nbsp;&bull;&nbsp; Finds Fun In The Little Things</p>
-						<nav>
-							<ul>
-								<li><a target="_blank" href="https://github.com/existenzial" class="icon fa-github"><span class="label">Github</span></a></li>
-                                <li><a target="_blank" href="https://linkedin.com/in/jazzlyles" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:ripley36706@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-								<!--<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+<head>
+    <title>Jazz Lyles</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+
+<body class="loading">
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+        
+        <div id="main">
+            <!-- Header -->
+            <header id="header">
+                <h1>Jazz Lyles</h1>
+                <p>Game Engineer &nbsp;&bull;&nbsp; Autonomous Thinker &nbsp;&bull;&nbsp; Finds Fun In The Little Things</p>
+                <nav>
+                    <ul>
+                        <li><a target="_blank" href="https://github.com/existenzial" class="icon fa-github"><span class="label">Github</span></a></li>
+                        <li><a target="_blank" href="https://linkedin.com/in/jazzlyles" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="mailto:ripley36706@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                        <!--<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>-->
-							</ul>
-						</nav>
-					</header>
+								-->
+                    </ul>
+                </nav>
+            <span class="quote">
+                <i class="fa fa-quote-left fa-3x fa-pull-left"></i>
+                <p align="left">The journey begins with a single step...</p>
+            </span>
+            <div id="blog">
+                <span class="label">
+                    <i class="fa fa-sort-desc fa-4x"></i>
+                </span>   
+            </div>
+            </header>
+            <!-- Footer -->
+            <footer id="footer">
+                <span class="copyright">&copy; Jazz Lyles, 2016.</span>
+            </footer>
+        </div>
+    </div>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script>
+        window.onload = function() {
+            document.body.className = '';
+        }
+        window.ontouchmove = function() {
+            return false;
+        }
+        window.onorientationchange = function() {
+            document.body.scrollTop = 0;
+        }
+    </script>
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="/assets/js/lib/jquery-2.2.0.min.js">\x3C/script>')</script>
+    <script>
+        // Slide Blog up/down on click
+        $( "#blog" ).click(function() {
+            $( "#blog" ).slideToggle( "slow", function() {
+            });
+        });
+    </script> 
+    <!-- Google Analytics -->
+    <!-- jazzlyles.com Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Jazz Lyles, 2016.</span>
-					</footer>
+        ga('create', 'UA-73150352-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- existenzial.github.io Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			</div>
-		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+        ga('create', 'UA-73158615-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+</body>
+
 </html>

@@ -109,10 +109,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 			display: none;
 		}
 
-.fa-blog {
-    background-image: url("images/blog-icon-black-300.png");
-}
-
 /* Wrapper */
 
 	@-moz-keyframes wrapper {
@@ -185,7 +181,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/trees.jpg") bottom left;
+		background: #348cb2 url("images/baywater.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -259,7 +255,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	}
 
 	#bg {
-		background-size: 2250px auto;
+		background-size: 2250px cover;
 		width: 6750px;
 	}
 
