@@ -26,21 +26,20 @@
                     <ul>
                         <li><a target="_blank" href="https://github.com/existenzial" class="icon fa-github"><span class="label">Github</span></a></li>
                         <li><a target="_blank" href="https://linkedin.com/in/jazzlyles" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://twitter.com/JazzLyles" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
                         <li><a href="mailto:ripley36706@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-                        <!--<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								-->
+<!--								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>-->
+								
                     </ul>
                 </nav>
             <span class="quote">
                 <i class="fa fa-quote-left fa-3x fa-pull-left"></i>
-                <p align="left">The journey begins with a single step...</p>
+                <p align="left">The journey of a thousand miles<br>begins with a single step...</p>
             </span>
-            <div id="blog">
-                <span class="label">
-                    <i class="fa fa-sort-desc fa-4x"></i>
-                </span>   
-            </div>
+            <!--<span id="blog-button">
+                <i class="fa fa-sort-desc fa-4x"></i>
+            </span>-->    
+            <div id="blog"></div>
             </header>
             <!-- Footer -->
             <footer id="footer">
@@ -64,10 +63,10 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="/assets/js/lib/jquery-2.2.0.min.js">\x3C/script>')</script>
-    <script>
+<!--    <script>
         $(document).ready(function(){
             
-            $("#blog").hover(
+            $("#blog-button").hover(
                 function(){
                     $(this).stop().animate({"opacity": "0.5"}, "fast");
                 },
@@ -76,21 +75,14 @@
                 }
             )
             // Slide Blog up/down on click
-            $( "#blog" ).click(function() {
-                $( "#blog" ).slideToggle( "slow", function() {
-                    (function() {
-                        
-                        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
-                        s.src = 'http://output53.rssinclude.com/output?type=asyncjs&id=1055824&hash=1b4217d35c260c2d7440e8aa8d570742';
-                        document.getElementsByTagName('head')[0].appendChild(s);
-                    })();
-                });
-            });
+            $( "#blog-button" ).on("click", function(e) {
+                e.preventDefault();
         });
-    </script>
-    <div id="rssincl-box-container-1055824"></div>
+    </script>-->
+    
     <!-- Parallax -->
     <script src="/assets/js/lib/parallax.min.js"></script>
+    
     <!-- Start of Google Analytics -->
     <!-- jazzlyles.com Analytics -->
     <script>
