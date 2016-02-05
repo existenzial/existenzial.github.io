@@ -3,6 +3,7 @@ published: true
 title: Bubble Sort: How Does It Work?
 layout: post
 ---
+# Bubble Sort: How Does It Work?
 OCTOBER 19, 2015
 
 ![Bubble Sort](https://jazzedaboutcoding.files.wordpress.com/2015/10/bubbles.jpg?w=300&h=200)
