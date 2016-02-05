@@ -24,14 +24,14 @@ It is of the utmost importance to build your game around the different game stat
 
 Typical Phaser game file structures separate the loading of these assets into a Preloader state within the common file structure:
 
-* Boot  (to set the game config, can also act as a loading screen)
-* Preloader (to load all assets)
-* MainMenu(to link most other states not involved in gameplay e.g.: Options, About, Credits etc.)
-* Game (the main state for gameplay)
-* GameOver (a state if the player loses)
-* NextLevel (a state to advance forward with increased difficulty)
-* Win (a state when the player finally wins the game)
-* Leaderboard (an optional state to retain a player scoring system)
+* *Boot*  (to set the game config, can also act as a loading screen)
+* *Preloader* (to load all assets)
+* *MainMenu*(to link most other states not involved in gameplay e.g.: Options, About, Credits etc.)
+* *Game*(the main state for gameplay)
+* *GameOver*(a state if the player loses)
+* *NextLevel*(a state to advance forward with increased difficulty)
+* *Win*(a state when the player finally wins the game)
+* *Leaderboard*(an optional state to retain a player scoring system)
 Once your assets are loaded and your game file structure designed, you can start to actually code your game.
 
 There are a wide variety of tutorials out there to help set you on the path to developing your game fully, but it is fundamental to your success to map out the game’s concept and end goal to help drive the user experience as you continue to develop. Decide how you want players to interact with the game and whether you want your game to be free or have in-game purchases? Do you want it cross-platform or just web-based?
