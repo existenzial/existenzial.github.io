@@ -3,6 +3,7 @@ published: true
 title: Phaser & Cocoon.io: What they don’t tell you
 layout: post
 ---
+# Phaser & Cocoon.io: What they don’t tell you
 FEBRUARY 1, 2016
 
 ![Phaser](https://jazzedaboutcoding.files.wordpress.com/2015/12/img.png?w=252&h=216)
