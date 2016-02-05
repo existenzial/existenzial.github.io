@@ -4,9 +4,8 @@ title: Phaser & Cocoon.io: What they don’t tell you
 layout: post
 ---
 FEBRUARY 1, 2016
-
-Everyone loves gaming, whether they’ll admit to it or not. How easy is it to actually get started in the world of game development, however?
 ![Phaser](https://jazzedaboutcoding.files.wordpress.com/2015/12/img.png?w=252&h=216)
+Everyone loves gaming, whether they’ll admit to it or not. How easy is it to actually get started in the world of game development, however?
 
 That depends on a few factors:
 
