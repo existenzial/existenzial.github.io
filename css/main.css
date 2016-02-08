@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
+* {
+    margin: auto;
+}
+
 body, input, select, textarea {
 	color: rgb(244,239,236);
 	font-family: 'Montserrat', sans-serif;
@@ -425,7 +429,6 @@ footer {
 	border-radius: 100%;
 	border: solid 1px #fff;
 	position: static;
-	margin-right: 60px;
 	cursor: pointer;
 }
 
