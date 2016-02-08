@@ -473,7 +473,12 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;	
+    position: relative;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.fa-sort-desc, .fa-quote-left {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 .fa:before {
