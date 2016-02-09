@@ -5,7 +5,7 @@
 }
 
 body, input, select, textarea {
-	color: rgb(244,239,236);
+	color: rgb(255,255,255);
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15pt;
 	font-weight: 300 !important;
@@ -53,11 +53,17 @@ h1, h3 {
 }
 
 h3 {
-    color: whitesmoke;
+    color: rgb(242,242,242);
 }
 
 p {
     padding: 20px;
+}
+
+hr { 
+    width:100%; 
+    padding: .5px;
+    background: rgba(0,0,0,0.3);
 }
 
 .link-list {
@@ -476,7 +482,6 @@ footer {
     position: relative;
     display: block;
     text-align: center;
-    background-size: 100% 100%;
     cursor: pointer;
 }
 
@@ -497,8 +502,8 @@ li {
 
 .main-blog {
 /*	background: #F39814;*/
-	background-image: url(../images/trees.jpg);
-	color: rgb(47,43,38);
+/*	background-image: url(../images/trees.jpg);*/
+	color: rgb(47,37,1);
     text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 	padding: 20px;
     align-items: center;
@@ -509,6 +514,7 @@ li {
 pre {
     white-space: pre-wrap;
     padding: 40px;
+    color: black;
     background: whitesmoke;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
     border-radius: 70px 70px 70px;
