@@ -486,7 +486,7 @@ footer {
 }
 
 .dropdown {
-    margin: -30px;
+    margin: auto;
     display: inline-block;
     position: fixed;
 }
