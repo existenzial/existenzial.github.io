@@ -42,9 +42,27 @@ h1, .blurbs {
     justify-content: center;
 }
 
-h1 {
+h1#author {
 	background-image: url(../images/drywood.jpg);
-	padding: 20px;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+img.post {
+    margin: auto;
+    display: block;
+}
+
+.post-img {
+    background-image: url(../images/drywood.jpg);
 }
 
 ul {
