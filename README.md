@@ -9,8 +9,9 @@ RSS personal blog feed imported from [Wordpress](http://jazzedaboutcoding.wordpr
 
 ###Technologies
 + [jQuery](http://jquery.com "jQuery") 
++ [jQuery UI](https://jqueryui.com/ "jQuery UI")
 + [CSS animations](https://www.html5andbeyond.com/css3-animated-backgrounds-infinite-scrolling-background/ "CSS animations") 
 + [Parallax](http://pixelcog.github.io/parallax.js/ "Parallax.js")
 
 ###Nods
-Props to [HTML5Up.net](http://html5up.net/uploads/demos/aerial/ "Aerial Template") for a starting template
+Props to [HTML5Up.net](http://html5up.net/uploads/demos/aerial/ "Aerial Template") for the idea and start
