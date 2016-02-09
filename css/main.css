@@ -485,6 +485,12 @@ footer {
     cursor: pointer;
 }
 
+.dropdown {
+    margin: -30px;
+    display: inline-block;
+    position: fixed;
+}
+
 .fa-li:before {
     -webkit-font-smoothing: antialiased;
     font-family: FontAwesome;

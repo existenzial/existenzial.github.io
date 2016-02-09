@@ -11,8 +11,7 @@ $(document).ready(function() {
             });
         });
     });*/
-
-    $(".fa-sort-desc").on("mouseenter", function(e) {
+    $(".fa-sort-desc").on("mouseenter mouseleave", function(e) {
         var el = $(this);
         if (!el.data("bnc")) el.effect("bounce", {
             direction: 'up',
