@@ -486,9 +486,10 @@ footer {
 }
 
 .dropdown {
-    margin: auto;
+    margin: -30px;
+    padding-left: 20px;
     display: inline-block;
-    position: fixed;
+    position: relative;
 }
 
 .fa-li:before {
