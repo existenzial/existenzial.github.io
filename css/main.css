@@ -412,7 +412,6 @@ ul {
 	opacity: 0.75;
 }
 
-
 footer {
     background: none repeat scroll 0 0 grey;
     height: 100px;
@@ -430,6 +429,10 @@ footer {
 	border: solid 1px #fff;
 	position: static;
 	cursor: pointer;
+}
+
+.fa-sort-desc {
+    cursor: pointer;
 }
 
 .fa-li:before {

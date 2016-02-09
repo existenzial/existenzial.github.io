@@ -16,7 +16,7 @@
 		                <i class="fa fa-quote-left fa-3x fa-pull-left"></i><br>
 		                <p align="left">The journey of a thousand miles<br>begins with a single step...</p>
 		            </span>
-					<h1>Jazz Lyles</h1>
+					<h1 id="author">Jazz Lyles</h1>
 	                	<p class="blurbs">Game Engineer &nbsp;&bull;&nbsp; Autonomous Thinker &nbsp;&bull;&nbsp; Finds Fun In The Little Things</p>
 					<!-- Nav & Contact Icons -->
 		            <div class="main-nav info">	
@@ -38,21 +38,27 @@
 							</li> -->
 						</nav>    	
 					</div>
-	            </div>
+	            </div>            
 			</header>
 					<!-- Backup RSS Blog feed in event of .ajax request failure-->
-		            <div class="blog-post-container">
+<!--		            <div class="blog-post-container">-->
 			            <!-- Wordpress RSS feed of Blog Posts -->
 						<!-- <iframe width="1500" height="400" style="border:none;" src="http://output92.rssinclude.com/output?type=iframe&amp;id=1055824&amp;hash=bfad9a7d4bd12f9cf26cd1d8af18cfa9"></iframe> -->
-		            </div>
+<!--		            </div>-->
 								<div class="main-blog">
 									<span id="blog-button">
 					                	<i class="fa fa-sort-desc fa-4x"></i>
 						            </span>
+                                    
 						            <ul id="blog-posts">
 						            	<!-- .ajax requested <li> blog-posts here -->
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
 						            </ul>
 								</div>
+
 			 <footer id="footer">
 				<span class="copyright">&copy; Jazz Lyles, 2016.</span>
 			</footer> 
@@ -85,20 +91,19 @@
 
 	    <!-- jQuery && jQuery UI Load -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	    <script>
-	        window.jQuery || document.write('<script src="/js/lib/jquery-2.2.0.min.js">\x3C/script>')
-        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
-        <script>
-        	window.jQuery.ui || document.write('<script src="/js/lib/jquery-ui.min.js">\x3C/script>')
+	    <script>
+	        window.jQuery || document.write('<script src="/js/lib/jquery-2.2.0.min.js">\x3C/script>');
+            window.jQuery.ui || document.write('<script src="/js/lib/jquery-ui.min.js">\x3C/script>');
         </script>
 
         <!-- Angular and UI-Router Load -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
         <script>
-        	window.angular || document.write('<script src="/js/lib/angular.min.js">\x3C/script>')
+        	window.angular || document.write('<script src="/js/lib/angular.min.js">\x3C/script>');
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+        
 
 		// <script type="text/javascript">
   //           $(document).ready(function(){
@@ -109,6 +114,19 @@
 		// 	    	$("#blog-button").selectable();
 		// 	    });
   //           });
-  //       </script>
+            $(document).ready(function(){
+                $(".fa-sort-desc").on("mouseover", function(){
+                    $(this).effect("bounce", {times:2}, 500);
+                    $(this).on("click", function(){
+                        $(this).animate({opacity:.6},500,function(){
+                            $(this).animate({opacity:1},500)
+                        });
+                    });
+                });
+                $(".fa-sort-desc").on("click", function(){
+                    $("#blog-posts").slideDown();
+                });
+            });
+         </script>
 	</body>
 </html>
