@@ -18,7 +18,7 @@ body, input, select, textarea {
 }
 
 .main-container {
-	min-width: 700px;
+	min-width: auto;
 }
 
 a {
@@ -36,7 +36,7 @@ a:hover {
 	border-color: transparent;
 }
 
-h1, .blurbs {
+h1, h3, .blurbs {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,26 +46,32 @@ h1#author {
 	background-image: url(../images/drywood.jpg);
 }
 
-h1 {
+h1, h3 {
     padding-top: 20px;
     padding-bottom: 30px;
+    background: rgba(0,0,0,.15)
+}
+
+h3 {
+    color: whitesmoke;
 }
 
 p {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
+}
+
+.link-list {
+    margin: auto;
+    text-align: justify;
 }
 
 img.post {
     margin: auto;
     display: block;
+    padding-top: 40px;
 }
 
-.post-img {
-    background-image: url(../images/drywood.jpg);
-}
-
-ul {
+ul ol {
 	    list-style-type: none;
 	    padding:0; 
 	    margin:0;
@@ -432,12 +438,29 @@ ul {
 
 footer {
     background: none repeat scroll 0 0 grey;
+    background-image: url(../images/drywood.jpg);
     height: 100px;
     margin: auto;
-    width: 400px;
+    width: 100%;
+    z-index:300;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow:none;
+    
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+}
+
+#footer.show {
+    height: 48px;
+
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
 }
 /* Icons */
 
@@ -449,7 +472,11 @@ footer {
 	cursor: pointer;
 }
 
-.fa-sort-desc {
+.fa-sort-desc, .fa-sort-asc {
+    position: relative;
+    display: block;
+    text-align: center;
+    background-size: 100% 100%;
     cursor: pointer;
 }
 
@@ -466,15 +493,24 @@ li {
     text-align: -webkit-match-parent;
 }
 
-.main-blog, .ui-selected {
-	/*background: #F39814;*/
-	background-image: url(../images/trees.jpg); 
-	color: white;
-	padding-right: 20px;
-    display: flex;
+.main-blog {
+/*	background: #F39814;*/
+	background-image: url(../images/trees.jpg);
+	color: rgb(47,43,38);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+	padding: 20px;
     align-items: center;
     justify-content: center;
     position: relative;	
+}
+
+pre {
+    white-space: pre-wrap;
+    padding: 40px;
+    background: whitesmoke;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    border-radius: 70px 70px 70px;
+
 }
 
 i {
@@ -501,7 +537,11 @@ i {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
-.fa-sort-desc, .fa-quote-left {
+.fa-quote-left {
+    margin: auto;
+}
+
+.fa-sort-desc, .fa-sort-asc, .fa-quote-left {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
