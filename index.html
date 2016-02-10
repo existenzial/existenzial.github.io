@@ -20,15 +20,19 @@
         <div ui-view></div>
         
         <div class="main-blog">
+            
             <div class="dropdown">
                 <span id="blog-button">
                     <i class="fa fa-sort-desc fa-4x"></i>
                 </span>
-            </div>    
+            </div>
             
-                    <span id="blog-button-hide">
-            	<i class="fa fa-sort-asc fa-4x"></i>
-            </span>
+            <div class="dropup">
+                <span id="blog-button-hide">
+            	   <i class="fa fa-sort-asc fa-4x"></i>
+                </span>
+            </div>
+            
         </div>
 
         <footer id="footer" ng-include="'./views/footer.html'"></footer>
