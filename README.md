@@ -3,7 +3,7 @@ Personal brand site including links to my:
 + GitHub 
 + LinkedIn 
 + email
-+ Engineering and Gaming Blog
++ Gaming Development and Engineering Blog
 + Past Projects
 
 ##Blog
@@ -16,6 +16,8 @@ Posts hosted here and externally on [Wordpress](http://jazzedaboutcoding.wordpre
 + [jQuery UI](https://jqueryui.com/ "jQuery UI")
 + [CSS animations](https://www.html5andbeyond.com/css3-animated-backgrounds-infinite-scrolling-background/ "CSS animations") 
 + [Parallax](http://pixelcog.github.io/parallax.js/ "Parallax.js")
++ [MongoDB](https://www.mongodb.org/ "MongoDB")
++ [Mongoose](http://mongoosejs.com/ "Mongoose")
 
 ###Nods
 Props to [HTML5Up.net](http://html5up.net/uploads/demos/aerial/ "Aerial Template") for the CSS scrolling background animation idea and inspiration
