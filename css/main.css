@@ -539,6 +539,10 @@ li {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.1); 
 }
 
+#projects {
+    display: inline-block;
+}
+
 .main-blog, #bio, #bio-quote, #projects, #minigames, #about {
 /*	background: #F39814;*/
 /*	background-image: url(../images/trees.jpg);*/
