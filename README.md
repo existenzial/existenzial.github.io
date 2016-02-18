@@ -1,9 +1,9 @@
 #Jazz Lyles
-Personal brand site including links to my: 
+Personal, Bootstrap-free, brand site including links to my: 
 + GitHub 
 + LinkedIn 
 + email
-+ Gaming Development and Engineering Blog
++ Game Development and Engineering Blog
 + Past Projects
 
 ##Blog
