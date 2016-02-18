@@ -1,0 +1,29 @@
+{
+  "name": "existenzial.github.io",
+  "version": "1.0.0",
+  "description": "Personal brand site including links to my:  + GitHub  + LinkedIn  + email + Engineering and Gaming Blog + Past Projects",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/existenzial/existenzial.github.io.git"
+  },
+  "author": "Jazz Lyles <ripley36706@gmail.com> (https://github.com/existenzial)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/existenzial/existenzial.github.io/issues"
+  },
+  "homepage": "https://github.com/existenzial/existenzial.github.io#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "mongodb": "^2.1.7",
+    "mongoose": "^4.4.4",
+    "nodemon": "^1.8.1"
+  }
+}
