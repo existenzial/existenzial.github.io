@@ -13,7 +13,7 @@ $.ajax({
     type: 'GET',
     url: '/blog',
     success: function(data){
-        console.log('GET req successful to /', data);
+        console.log('GET req successful to /blog', data);
     },
     error: function(){
         console.log('Hmm...an error');
