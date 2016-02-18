@@ -534,12 +534,12 @@ li {
 }
 */
 
-#bio, #bio-quote, #projects, #minigames {
+#bio, #bio-quote, #projects, #minigames, #about {
     color: rgb(47,37,1);
     text-shadow: 1px 1px 3px rgba(0,0,0,0.1); 
 }
 
-.main-blog, #bio, #bio-quote, #projects, #minigames {
+.main-blog, #bio, #bio-quote, #projects, #minigames, #about {
 /*	background: #F39814;*/
 /*	background-image: url(../images/trees.jpg);*/
 	color: rgb(47,37,1);
