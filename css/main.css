@@ -534,7 +534,7 @@ li {
 }
 */
 
-.main-blog {
+.main-blog, #bio, #bio-quote, #projects, #minigames {
 /*	background: #F39814;*/
 /*	background-image: url(../images/trees.jpg);*/
 	color: rgb(47,37,1);

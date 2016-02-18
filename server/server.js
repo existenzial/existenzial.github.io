@@ -13,20 +13,23 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', function(req, res){
+    console.log('hitting /');
     res.status(201).send("Serving up /");
 });
 
 app.get('/about', function(req, res){
+    console.log('hitting /about');
     res.status(201).send("Serving up /about");
 });
 
 app.get('/projects', function(req, res){
+    console.log('hitting /projects');
     res.status(201).send("Serving up /projects");
 });
 
 app.get('/blog', function(req, res){
     console.log('hitting /blog');
-    res.send(201, "blog hit points++");
+    res.status(201).send("blog hit points++");
 });
 
 app.listen(app.get('port'));
