@@ -21,6 +21,12 @@ body, input, select, textarea {
 	min-width: auto;
 }
 
+#404bg {
+	background-image: url('../images/lionel404.jpg');
+	background-position: fixed;
+}
+
+
 #navbar {
     width: 100%;
     height: 100px;
