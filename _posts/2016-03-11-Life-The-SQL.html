@@ -1,0 +1,25 @@
+March 31, 2016
+
+<h1>Setting Up MYSQL On Your Mac</h1>
+
+<p>Databases?! Who needs 'em, you say? Well...everyone. I'll cover setting up simple prototyping databases like use of MongoDB with and without the Mongoose ORM in a later post for you. This post is directed at those of you that would actually like to have your data relate to one another.</p>
+
+<p>What does that mean exactly? Relational databases allow you reflect the relationships between your data. That sounds easy enough right? For example, if you're creating the next Facebook you might have users and posts associated with those users. Your 'User' table might have not only have columns of personal information about them that you could represent on their profile page but also a 'user_id' to identify them as unique compared to every other user registered and stored in your database.</p>
+
+So now we know 
+
+-Go to dev.mysql.com, download the dmg and install (IMPORTANT - Make note of your username(usually root at first) and temporary password, You will need the password later, so WRITE IT DOWN)
+-Go to your terminal and type 
+    -sudo . (to be able to type multiple commands)
+    -cd into your mysql install directory (check with 'which mysql')
+    -If you try to log into the database now with mysql -u root -p and then your password it won't work (common ERROR: ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2))
+    -To start the MYSQL Server type: sudo /usr/local/mysql/support-files/mysql.server start
+    OR
+    sudo launchctl load -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist (for OSX El Capitan/Yosemite)
+    -Then mysql -u root -p , then your temporary password to log in
+    -You should finally be prompted with: Starting MySQL
+.. SUCCESS!
+    -If you try 'use mysql' now, it won't work b/c you have to change your password for the current user (most likely 'root'), so do so by typing in the following command, replacing 'NEW_PASSWORD' with your new password: SET PASSWORD FOR 'root'@'localhost' = PASSWORD('NEW_PASSWORD');
+    -If you never want the password you just set to expire type in: ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;
+    
+<p>And BOOM! everything is setup. You can now 'use' any database you want, run queries, create tables the whole gamut. And once you're done</p>
