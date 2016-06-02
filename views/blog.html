@@ -1,14 +1,56 @@
--*Blog View*-
 <p>{{bio}}</p>
 
 <div class="main-blog">
     
     <div id="blog-posts">
-        <div class="post-container">
+        <div class="post-container" id="post-mysql">
+            <h1>Life: MySQL</h1>
+            <h3>March 31, 2016</h3>
+
+            <span><img class="post" src="../images/MySQL_logo.png" height="200" width="300"></a></span>
+
+            <p>Databases?! Who needs 'em, you say? Well...everyone. I'll cover setting up simple prototyping databases like use of MongoDB with and without the Mongoose ORM in a later post for you. This post is directed at Mac users (those among you that would actually like to have your data relate to one another) that want to setup a MySQL server on your local machine.</p>
+
+            <p>What does that data relation mean exactly? Relational databases allow you reflect the relationships between your data. That sounds easy enough, right? For example, if you're creating the next MMO that will raise the bar for the industry, you might have users and posts associated with the interactive chat between those users. Your 'User' table might have not only have columns of personal information about them that you could represent on their profile page or in chat <i>"pwning"</i> someone but also a 'user_id' to identify them as unique compared to every other user registered and stored in your database. That's where <em>SQL</em>  comes in. There are many relational database cloud services out there like <a target="_blank" href="https://aws.amazon.com/rds/">Amazon RDS</a> that can help you get the ball rolling, but you can also check some out of the database types individually and see what might fit the individual needs of your project: </p>
+
+            <ul class="link-list">
+                <li><a target="_blank" href="https://www.postgresql.org/">PostgreSQL</a> – 15 years going strong and open source to boot</li>
+                <li><a target="_blank" href="https://www.mysql.com/">MySQL</a> – so popular, you can't sit with them at lunch</li>
+                <li><a target="_blank" href="https://mariadb.org/">MariaDB</a> – constructed by the original devs of MySQL and also open source</li>
+                <li><a target="_blank" href="https://msdn.microsoft.com/en-us/library/mt590198(v=sql.1).aspx">Microsoft SQL Server</a> – robust and still used by quite a few companies</li>
+            </ul>
+
+            <p>
+            Have you scribed out enough learning about them all? Great! Onto the setup!
+                <ol>
+                    <li>Go to dev.mysql.com, download the dmg and install (IMPORTANT - Make note of your username(usually root at first) and temporary password, You will need the password later, so WRITE IT DOWN)</li>
+                    <li>Go to your terminal and type: 
+                        <ul>
+                            <li>sudo . (to be able to type multiple commands)</li>
+                            <li>cd into your mysql install directory (check with 'which mysql') <small>NOTE: If you try to log into the database now with mysql -u root -p and then your password it won't work (common ERROR: ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2))</small></li>
+                            <li>sudo /usr/local/mysql/support-files/mysql.server start 
+                            OR
+                            sudo launchctl load -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist (for OSX El Capitan/Yosemite)
+                            to start the MYSQL Server</li>
+                            <li>mysql -u root -p , then your temporary password to log in</li>
+                        </ul>
+                    </li>
+                    <li>You should finally be prompted with: Starting MySQL</li>
+                    <li>Followed by .. SUCCESS!</li>
+                    <li>NOTE: If you try 'use mysql' now, it won't work b/c you have to change your password for the current user (most likely 'root'), so do so by typing in the following command, replacing 'NEW_PASSWORD' with your new password: SET PASSWORD FOR 'root'@'localhost' = PASSWORD('NEW_PASSWORD');</li>
+                    <li>If you never want the password you just set to expire type in: ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;</li>
+                </ol>
+            </p>
+
+            <p>And BOOM! everything is setup. You can now 'USE' any database you want, run queries, create tables the whole gamut. Now run along little grasshopper and get to designing your schema.</p>
+        </div>
+        <br>
+        <hr>    
+        <div class="post-container" id="post-phaser">
             <h1>Phaser & Cocoon.io: What They Don't Tell You</h1>
             <h3>FEBRUARY 1, 2016</h3>
 
-            <span><img class="post" src="https://jazzedaboutcoding.files.wordpress.com/2015/12/img.png?w=252&h=216"></a></span>
+            <span><img class="post" src="../images/phaser_logo.png" height="216" width="252"></a></span>
 
             <p>Everyone loves gaming, whether they’ll admit to it or not. How easy is it to actually get started in the world of game development, however?</p>
 
@@ -55,7 +97,7 @@
         </div>
         <br>
         <hr>
-        <div class="post-container">
+        <div class="post-container" id="post-js-expansion">
             <h1>Javascript: The Expansion Pack</h1>
             <h3>OCTOBER 23, 2015</h3>
 
@@ -72,11 +114,11 @@
         </div>
         <br>
         <hr>
-        <div class="post-container">
+        <div class="post-container" id="post-bubblesort">
             <h1>Bubble Sort: How Does It Work?</h1>
             <h3>OCTOBER 19, 2015</h3>
 
-            <span class="post-img"><img class="post"  src="https://jazzedaboutcoding.files.wordpress.com/2015/10/bubbles.jpg?w=300&h=200"></span>
+            <span class="post-img"><img class="post" src="../images/bubbles.jpg" height="200" width="200"></span>
 
             <p>The time complexity of Bubble Sort makes you wonder why it’s necessary to even rebuild such an expensive function, but the effort in making your brain iron out the details of how it works differently than running a native .sort( ) method and its ease of implementation is the true joy of the exercise. Default to either the native .sort( ) method or a sort included in a library like UnderscoreJS/lodash if you want to save both the time and effort though later in your code, as Bubble Sort is never as effective as we’d like it to be.</p>
 
@@ -119,11 +161,11 @@ return array;
                 </div>
                 <br>
                 <hr>
-                <div class="post-container">
+                <div class="post-container" id="post-beginning">
                     <h1>The Beginning of an Era</h1>
                     <h3>October 19, 2015</h3>
 
-                    <span class="post-img"><img class="post"  src="https://jazzedaboutcoding.files.wordpress.com/2015/10/20150905_1926271.jpg?w=508&h=286"></span>
+                    <span class="post-img"><img class="post" src="../images/baywater.jpg" height="286" width="508"></span>
 
                     <blockquote><p>A lesson learned in remembering to breathe. A firehose of information shoots recursive blasts without base cases at my face, and I am reminded to leave a note for my future self: “A month ago you didn’t even know how to write a simple for loop, and now look at how far you’ve come.”</p></blockquote>
 
