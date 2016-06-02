@@ -561,7 +561,13 @@ li {
     position: relative;	
 }
 
-pre, code{
+code{
+    color: black;
+    background: whitesmoke;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);	
+}
+
+pre{
     white-space: pre-wrap;
     padding: 40px;
     color: black;
