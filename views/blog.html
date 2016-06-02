@@ -27,7 +27,7 @@
                     <li>Go to your terminal and type: 
                         <ul>
                             <li><code>sudo .</code> <small>(to be able to type multiple commands)</small></li>
-                            <li>cd into your mysql install directory (check with 'which mysql') <small>NOTE: If you try to log into the database now with <code>mysql -u root -p</code> and then your password it won't work (common <code>ERROR: ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2))</code></small></li>
+                            <li>cd into your mysql install directory (check with 'which mysql') <small>NOTE: If you try to log into the database now with <code>mysql -u root -p</code> and then your password it won't work (common ERROR: <code>ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2))</code></small></li>
                             <li><code>sudo /usr/local/mysql/support-files/mysql.server start</code> 
                             OR
                             <code>sudo launchctl load -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist</code> <small>(for OSX El Capitan/Yosemite)</small>
