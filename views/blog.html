@@ -27,15 +27,15 @@
                     <li>Go to your terminal and type: 
                         <ul>
                             <li><code>sudo .</code> <small>(to be able to type multiple commands)</small></li>
-                            <li>cd into your mysql install directory (check with 'which mysql') <small>NOTE: If you try to log into the database now with <code>mysql -u root -p</code> and then your password it won't work (common ERROR: <code>ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2))</code></small></li>
+                            <li><code>cd</code> into your mysql install directory (check with <code>'which mysql'</code>) <small>NOTE: If you try to log into the database now with <code>mysql -u root -p</code> and then your password it won't work (common ERROR: <code>ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2))</code></small></li>
                             <li><code>sudo /usr/local/mysql/support-files/mysql.server start</code> 
                             OR
                             <code>sudo launchctl load -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist</code> <small>(for OSX El Capitan/Yosemite)</small>
                             to start the MYSQL Server</li>
-                            <li><code>mysql -u root -p</code>, then your temporary password to log in</li>
+                            <li><code>mysql -u root -p</code>, then use your temporary password to log in</li>
                         </ul>
                     </li>
-                    <li>You should finally be prompted with: Starting MySQL</li>
+                    <li>You should finally be prompted with: <code>Starting MySQL</code></li>
                     <li>Followed by <code>.. SUCCESS!</code></li>
                     <li>NOTE: If you try <code>'USE mysql'</code> now, it won't work b/c you have to change your password for the current user (most likely 'root'), so do so by typing in the following command, replacing 'NEW_PASSWORD' with your new password: <code>SET PASSWORD FOR 'root'@'localhost' = PASSWORD('NEW_PASSWORD');</code></li>
                     <li>If you never want the password you just set to expire type in: <code>ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;</code></li>
