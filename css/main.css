@@ -564,7 +564,10 @@ li {
 code{
     color: black;
     background: whitesmoke;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);	
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 5px #888888;
+    border-radius: 70px 70px 70px;
+
 }
 
 pre{
