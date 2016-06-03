@@ -108,9 +108,9 @@ img.post {
     padding-top: 40px;
 }
 
-ul ol {
+ul, ol, li {
 	    list-style-type: none;
-	    padding:0; 
+	    padding: 3px; 
 	    margin:0;
 }
 
