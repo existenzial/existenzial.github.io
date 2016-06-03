@@ -561,7 +561,7 @@ li {
     position: relative;	
 }
 
-code{
+code .terminal{
 	padding: 3px;
     color: black;
     background: whitesmoke;

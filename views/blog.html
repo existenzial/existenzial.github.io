@@ -26,22 +26,22 @@
                     <li>Go to dev.mysql.com, download the dmg and install <small>(IMPORTANT - Make note of your username(usually root at first) and temporary password, You will need the password later, so WRITE IT DOWN)</small></li>
                     <li>Go to your terminal and type: 
                         <ul>
-                            <li><code>sudo .</code> <small>(to be able to type multiple commands)</small></li>
-                            <li><code>cd</code> into your mysql install directory (check with <code>'which mysql'</code>) <small>NOTE: If you try to log into the database now with <code>mysql -u root -p</code> and then your password it won't work (common ERROR: <code>ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)</code>)</small></li>
-                            <li><code>sudo /usr/local/mysql/support-files/mysql.server start</code> 
+                            <li><code class="terminal">sudo .</code> <small>(to be able to type multiple commands)</small></li>
+                            <li><code class="terminal">cd</code> into your mysql install directory (check with <code class="terminal">'which mysql'</code>) <small>NOTE: If you try to log into the database now with <code class="terminal">mysql -u root -p</code> and then your password it won't work (common ERROR: <code class="terminal">ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)</code>)</small></li>
+                            <li><code class="terminal">sudo /usr/local/mysql/support-files/mysql.server start</code> 
                             OR
-                            <code>sudo launchctl load -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist</code> <small>(for OSX El Capitan/Yosemite)</small>
+                            <code class="terminal">sudo launchctl load -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist</code> <small>(for OSX El Capitan/Yosemite)</small>
                             to start the MYSQL Server</li>
-                            <li><code>mysql -u root -p</code>, then use your temporary password to log in</li>
+                            <li><code class="terminal">mysql -u root -p</code>, then use your temporary password to log in</li>
                         </ul>
                     </li>
-                    <li>You should finally be prompted with: <code>Starting MySQL</code></li>
-                    <li>Followed by <code>.. SUCCESS!</code></li>
-                    <li>NOTE: If you try <code>'USE mysql'</code> now, it won't work b/c you have to change your password for the current user (most likely 'root'), so do so by typing in the following command, replacing 'NEW_PASSWORD' with your new password: <code>SET PASSWORD FOR 'root'@'localhost' = PASSWORD('NEW_PASSWORD');</code></li>
-                    <li>If you never want the password you just set to expire type in: <code>ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;</code></li>
+                    <li>You should finally be prompted with: <code class="terminal">Starting MySQL</code></li>
+                    <li>Followed by <code class="terminal">.. SUCCESS!</code></li>
+                    <li>NOTE: If you try <code class="terminal">'USE mysql'</code> now, it won't work b/c you have to change your password for the current user (most likely 'root'), so do so by typing in the following command, replacing 'NEW_PASSWORD' with your new password: <code class="terminal">SET PASSWORD FOR 'root'@'localhost' = PASSWORD('NEW_PASSWORD');</code></li>
+                    <li>If you never want the password you just set to expire type in: <code class="terminal">ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;</code></li>
                 </ol>
             </p>
-            <p>And BOOM! everything is setup. You can now <code>'USE'</code> any database you want, run queries, create tables the whole gamut. Now run along little grasshopper and get to designing your schema.</p>
+            <p>And BOOM! everything is setup. You can now <code class="terminal">'USE'</code> any database you want, run queries, create tables the whole gamut. Now run along little grasshopper and get to designing your schema.</p>
         </div>
         <br>
         <hr>    
