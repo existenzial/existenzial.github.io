@@ -561,7 +561,7 @@ li {
     position: relative;	
 }
 
-code .terminal{
+.terminal{
 	padding: 3px;
     color: black;
     background: whitesmoke;
@@ -571,7 +571,7 @@ code .terminal{
 
 }
 
-pre{
+pre code{
     white-space: pre-wrap;
     padding: 40px;
     color: black;
